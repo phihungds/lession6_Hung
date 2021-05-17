@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Điện máy xanh</title>
-    <script></script>
+    <script>
+
+    </script>
 </head>
 
 <body>
+
+    <!-- Chọn sản phẩm -->
+
     <table style="width:800px;">
         <form action="">
             <tr>
-                <td align="center" valign="top" rowspan="4" style="width: 180px;"><img src="maylanh.jpg" alt="hình máy lạnh"
-                        style="width:150px">
+                <td align="center" valign="top" rowspan="4" style="width: 180px;"><img src="maylanh.jpg"
+                        alt="hình máy lạnh" style="width:150px">
 
                     <p style="color: grey;">&#8855 Xóa</p>
                 </td>
@@ -38,23 +43,73 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="background-color: rgb(231, 238, 128);font-size: 20px;">  Giảm 850.000&#8363 còn 8.960.000&#8363</td>
+                <td colspan="2" style="background-color: rgb(231, 238, 128);font-size: 20px;"> Giảm <span
+                        style="color: red;">850.000&#8363</span> còn <span style="color: red;"> 8.960.000&#8363</span>
+                </td>
             </tr>
             <tr>
                 <td>Màu: Trắng</td>
                 <td style="font-size: 20px;" align="right">
-                    <button  >-</button>
-                    <input type="text" style="width:15px">
-                    <button>+</button>
+                    <button style="font-size: large;">-</button>
+                    <input type="text" id="sl" style="width:15px; font-size: large;">
+                    <button style="font-size: large;">+</button>
                 </td>
-                
+
             </tr>
-            <tr><td colspan="3"><hr></td></tr>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr style="font-size: 18px;">
+                <td colspan="2">
+                    <a href="#"><img src="phieugiamgia.png" alt="">Sử dụng mã giảm giá</a>
+                    <p>Tạm tính ( <span id="sosp"></span>sản phẩm)</p>
+                    <p>Giảm:</p>
+                    <p><b> Tổng tiền:</b></p>
+                </td>
+                <td align="right"><br>
+                    <p>
+                        29.430.000&#8363</p>
+                    <p>
+                        -2.550.000&#8363</p>
+                    <p><b style="color: red;">26.880.000&#8363</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
         </form>
     </table>
-    
-    
-    
+
+    <!-- Thông tin khách hàng -->
+
+    <p>THÔNG TIN KHÁCH HÀNG:</p>
+
+    <form action="">
+        <input type="radio" name="gt">Anh
+        <input type="radio" name="gt">Chị
+        <br>
+        <table style="width:800px">
+            <tr>
+                <td style="width:375px">
+                    <input placeholder="Họ và Tên" type="text" style="width:375px;height:30px ;">
+                </td>
+                <td align="right" style="width:375px">
+                    <input placeholder="Số điện thoại" type="text" style="width:375px;height:30px ;">
+                </td>
+            </tr>
+        </table>
+        <br>
+        CHỌN CÁCH THỨC NHẬN HÀNG:
+        <br><br>
+        <input type="radio" name="nhanhang">Giao tận nơi 
+        <input type="radio" name="nhanhang">Nhận tại siêu thị
+        
+    </form>
+
 </body>
 
 </html>
